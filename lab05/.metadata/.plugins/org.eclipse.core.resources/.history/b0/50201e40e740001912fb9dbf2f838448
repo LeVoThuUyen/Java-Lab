@@ -1,0 +1,49 @@
+package hust.soict.ictglobal.aims;
+
+import hust.soict.ictglobal.aims.disc.DigitalVideoDisc;
+import hust.soict.ictglobal.aims.order.Order;
+
+public class Aims {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Order order = new Order();
+		
+		DigitalVideoDisc dvd1 = new DigitalVideoDisc("The Lion King");
+		dvd1.setCategory("Animation");
+		dvd1.setCost(19.95f);
+		dvd1.setDirector("Roger Allers");
+		dvd1.setLength(87);
+		
+		DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars");
+		dvd2.setCategory("Science Fiction");
+		dvd2.setCost(24.95f);
+		dvd2.setDirector("George Lucas");
+		dvd2.setLength(124);
+		
+		DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladdin");
+		dvd3.setCategory("Animation");
+		dvd3.setCost(18.99f);
+		dvd3.setDirector("John Musker");
+		dvd3.setLength(90);
+		
+		DigitalVideoDisc[] dvdList = {dvd1, dvd2, dvd3};
+		order.addDigitalVideoDisc(dvdList);
+		order.addDigitalVideoDiscVar(dvd1, dvd2, dvd3);
+		
+		//printing
+		order.print();
+		
+		//test order limit
+		for(int i = 1; i <= 3; i++) {
+			if(Order.getNbOrders() >= Order.MAX_LIMITED_ORDERS) {
+				System.out.println("maximum number of orders");
+				break;
+			}
+			Order newOrder = new Order();
+			System.out.println("Number of orders: " + Order.getNbOrders());
+		}
+	
+	}
+
+}
