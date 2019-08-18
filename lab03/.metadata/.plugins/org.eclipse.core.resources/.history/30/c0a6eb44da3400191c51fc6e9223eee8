@@ -1,0 +1,17 @@
+package mydate;
+
+public class MyDateTest {
+
+	public static void main(String[] args) {
+		MyDate currentDate = new MyDate();
+		
+		MyDate dateInt = new MyDate(2, 3, 1998);
+		
+		MyDate dateString = new MyDate("April 30th 1975");
+		
+		currentDate.print();
+		dateInt.print();
+		dateString.print();
+	}
+
+}

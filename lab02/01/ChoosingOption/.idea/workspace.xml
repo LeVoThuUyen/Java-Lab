@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0056c4d-c8ab-4a90-8fda-c82e668a5fc8" name="Default Changelist" comment="" />
+    <list default="true" id="f0056c4d-c8ab-4a90-8fda-c82e668a5fc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChoosingOption.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ChoosingOption/ChoosingOption.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChoosingOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../02/InputFromKeyboard/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../02/InputFromKeyboard/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../02/InputFromKeyboard/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../02/InputFromKeyboard/src/InputFromKeyboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04/TriangleDrawing/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04/TriangleDrawing/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04/TriangleDrawing/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04/TriangleDrawing/src/TriangleDrawing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05/DaysOfMonth/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05/DaysOfMonth/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05/DaysOfMonth/src/DaysOfMonth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06/ArraySorting/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06/ArraySorting/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06/ArraySorting/src/ArraySorting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../07/MatrixAddition/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../07/MatrixAddition/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../07/MatrixAddition/src/MatrixAddition.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +92,9 @@
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

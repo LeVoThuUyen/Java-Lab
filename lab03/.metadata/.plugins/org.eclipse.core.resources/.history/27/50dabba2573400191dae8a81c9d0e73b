@@ -1,0 +1,66 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+package mydate;
+
+public class MyDate {
+	private int day;
+	private int month;
+	private int year;
+	
+	public MyDate(int day, int month, int year) {
+		super();
+		this.day = day;
+		this.month = month;
+		this.year = year;
+	}
+	
+	public MyDate() {//set current date
+		String now = java.time.LocalDate.now().toString(); 
+	}
+	
+	public MyDate(String date) {
+		
+	}
+
+	public int getDay() {
+		return day;
+	}
+
+	public boolean setDay(int day) {
+		if(day < 1 || day > 31)
+			return false;
+		this.day = day;
+		return true;
+	}
+
+	public int getMonth() {
+		return month;
+	}
+
+	public boolean setMonth(int month) {
+		if(month < 1 || month > 12 )
+			return false;
+		this.month = month;
+		return true;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public boolean setYear(int year) {
+		if(year < 0)
+			return false;
+		this.year = year;
+		return true;
+	}
+	
+	public boolean accept(String date) {
+		return true;
+	}
+	
+	public void print() {
+		
+	}
+}

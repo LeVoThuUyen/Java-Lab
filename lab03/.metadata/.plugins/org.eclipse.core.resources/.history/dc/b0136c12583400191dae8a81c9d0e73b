@@ -1,0 +1,11 @@
+package mydate;
+
+public class MyDateTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyDate date = new MyDate();
+		System.out.print(date.getDay() + " " + date.getMonth() + " " + date.getYear() + "\n");
+	}
+
+}

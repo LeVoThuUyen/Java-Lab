@@ -1,0 +1,13 @@
+package mydate;
+
+public class MyDateTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		MyDate date = new MyDate(19, 2, 2018);
+//		System.out.print(date.getDay() + " " + date.getMonth() + " " + date.getYear() + "\n");
+		String s = "5th";
+		System.out.print(s.substring(0, -2));
+	}
+
+}
