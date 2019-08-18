@@ -1,0 +1,9 @@
+package hust.soict.ictglobal.aims.media;
+
+public class Test {
+
+	public Test() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

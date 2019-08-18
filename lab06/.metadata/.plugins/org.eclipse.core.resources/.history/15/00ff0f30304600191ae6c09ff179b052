@@ -1,0 +1,15 @@
+package hust.soict.ictglobal.aims;
+
+import hust.soict.ictglobal.aims.media.Book;
+import hust.soict.ictglobal.aims.order.Order;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Order order = new Order();
+		Book book = new Book("Hello", Worl)
+		DigitalVideoDisc
+	}
+
+}

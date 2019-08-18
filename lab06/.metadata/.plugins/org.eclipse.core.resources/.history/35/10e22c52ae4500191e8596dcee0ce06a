@@ -1,0 +1,53 @@
+package hust.soict.ictglobal.aims.media;
+
+public class DigitalVideoDisc extends Media{
+	private String director;
+	private int length;
+	public String getDirector() {
+		return director;
+	}
+	public void setDirector(String director) {
+		this.director = director;
+	}
+	public int getLength() {
+		return length;
+	}
+	public void setLength(int length) {
+		this.length = length;
+	}
+	
+	public boolean search(String title) {
+		String tokens[] = title.split(" +");
+		for(String token : tokens) {
+			if(this.title.toUpperCase().contains(token.toUpperCase()))
+				return true;
+		}
+		return false;
+	}
+	
+	//constructor
+	public DigitalVideoDisc(String title) {
+		super();
+		this.title = title;
+	}
+	public DigitalVideoDisc(String title, String category) {
+		super();
+		this.title = title;
+		this.category = category;
+	}
+	public DigitalVideoDisc(String title, String category, String director) {
+		super();
+		this.title = title;
+		this.category = category;
+		this.director = director;
+	}
+	public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
+		super();
+		this.title = title;
+		this.category = category;
+		this.director = director;
+		this.length = length;
+		this.cost = cost;
+	}
+	
+}

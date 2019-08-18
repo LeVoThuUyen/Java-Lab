@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="hust.soict.ictglobal.aims.disc.DigitalVideoDisc"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="hust.soict.ictglobal.aims.order.Order"/>
+    <fullyQualifiedTypeName name="hust.soict.ictglobal.aims.media.Media"/>
+    <fullyQualifiedTypeName name="hust.soict.ictglobal.aims.media.DigitalVideoDisc"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="hust.soict.ictglobal.aims.media.Book"/>
+</qualifiedTypeNameHistroy>

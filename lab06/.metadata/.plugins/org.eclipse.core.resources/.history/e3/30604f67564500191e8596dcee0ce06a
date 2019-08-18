@@ -1,0 +1,80 @@
+package hust.soict.ictglobal.aims.order;
+import java.util.ArrayList;
+
+import hust.soict.ictglobal.aims.media.DigitalVideoDisc;
+import hust.soict.ictglobal.aims.media.Media;
+import hust.soict.ictglobal.date.MyDate;
+import java.util.Random;
+
+public class Order {
+	public static final int MAX_LIMITED_ORDERS = 5;
+	private static int nbOrders = 0;
+
+	private MyDate dateOrdered;
+	private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
+	
+	//constructor
+	public Order() {
+		dateOrdered = new MyDate();
+		nbOrders++;
+	}
+	
+	public static int getNbOrders() {
+		return nbOrders;
+	}
+
+	public float totalCost() {
+		float sum = 0;
+		for(int i = 0; i < itemsOrdered.size(); i++) {
+			sum = sum + itemsOrdered.get(i).getCost();
+		}
+		return sum;
+	}
+	
+	public MyDate getDateOrdered() {
+		return dateOrdered;
+	}
+
+	public void setDateOrdered(MyDate dateOrdered) {
+		this.dateOrdered = dateOrdered;
+	}
+	
+	public boolean addMedia(Media item) {
+		int qtyOrdered = itemsOrdered.size();
+		if(qtyOrdered < 10) {
+			itemsOrdered.add(item);
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean removeMedia(Media item) {
+		return itemsOrdered.remove(item);
+	}
+	
+//	public void print() {
+//		System.out.println("*********************Order************************");
+//		System.out.print("Date: ");
+//		dateOrdered.print();
+//		System.out.println();
+//		System.out.println("Ordered items:");
+//		for(int i = 0; i < itemsOrdered.size(); i++) {
+//			DigitalVideoDisc currentDVD = itemsOrdered.get(i);
+//			System.out.printf("%d. DVD - %s - %s - %s - %d: $%.2f%n", 
+//					i + 1,
+//					currentDVD.getTitle(),
+//					currentDVD.getCategory(),
+//					currentDVD.getDirector(),
+//					currentDVD.getLength(),
+//					currentDVD.getCost());
+//		}
+//		System.out.printf("Total cost: $%.2f%n", totalCost());
+//		System.out.println("**************************************************");
+//	}
+	
+	public Media getALuckyItem() {
+		Random r = new Random();
+		int luckyIndex = r.nextInt(itemsOrdered.size());
+		return itemsOrdered.get(luckyIndex);
+	}
+}

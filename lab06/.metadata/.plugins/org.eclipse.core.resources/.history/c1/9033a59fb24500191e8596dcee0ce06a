@@ -1,0 +1,15 @@
+package hust.soict.ictglobal.aims.media;
+
+public class TestBook {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Book book = new Book();
+		book.setTitle("Harry Potter");
+		book.set
+		System.out.println("title: "+ book.getTitle());
+		System.out.println("cat: " + book.getCategory());
+		System.out.println("cost: " + book.getCost());
+	}
+
+}

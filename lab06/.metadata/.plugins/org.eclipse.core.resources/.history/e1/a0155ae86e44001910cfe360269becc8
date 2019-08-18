@@ -1,0 +1,79 @@
+package hust.soict.ictglobal.aims;
+import java.util.Scanner;
+
+import hust.soict.ictglobal.aims.disc.DigitalVideoDisc;
+import hust.soict.ictglobal.aims.order.Order;
+
+public class Aims {
+
+	public static void main(String[] args) {
+		Order order = null;
+		
+		Scanner input = new Scanner(System.in);
+		int choice;
+		
+		showMenu();
+		choice = input.nextInt();
+		
+		while(choice != 0) {
+			switch(choice) {
+			case 1: 
+				System.out.println("1. Create new order");
+				order = new Order();
+				break;
+				
+			case 2:
+				System.out.println("2. Add item to the order");
+				if(order != null) {
+					//ADD
+					System.out.println("Enter media choice 0 - dvd 1 - book");
+					int mediaChoice = input.nextInt();
+					
+					switch(mediaChoice) {
+					case 0:
+						DigitalVideoDisc newItem;
+						
+						order.addDigitalVideoDisc(newItem);
+						break;
+					case 1:
+						break;
+					default:
+						break;
+					}
+				}
+				else {
+					System.out.println("You haven't create any order! Please create a new one!");
+				}
+				
+				break;
+				
+			case 3:
+				System.out.println("3. Delete item by id");
+				
+				break;
+				
+			case 4:
+				
+				break;
+				
+			default:
+			}
+			
+			showMenu();
+			choice = input.nextInt();
+		}
+	}
+	
+	public static void showMenu() {
+		System.out.println("Order Management Application: ");
+		System.out.println("--------------------------------");
+		System.out.println("1. Create new order");
+		System.out.println("2. Add item to the order");
+		System.out.println("3. Delete item by id");
+		System.out.println("4. Display the items list of order");
+		System.out.println("0. Exit");
+		System.out.println("--------------------------------");
+		System.out.println("Please choose a number: 0-1-2-3-4");
+	}
+
+}
